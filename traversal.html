@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traversal</title>
+  <style>
+    img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      border: burlywood solid 5px;
+
+    }
+
+    .card {
+      background-image: linear-gradient(to right top, #2f1fe7, #004df2, #006cf6, #2f86f4, #5e9eee);
+      border: rgb(169, 160, 160) solid 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1;
+      width: 350px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      color: rgb(232, 228, 228);
+      position: relative;
+      border-radius: 20px;
+      box-shadow: 12px 12px 38px 12px rgba(114, 114, 114, 0.42);
+    }
+
+    .card::after {
+      position: absolute;
+      content: "x";
+      top: 0;
+      right: 10px;
+      /* padding: 2px 2px 2px 2px; */
+      background-color: chocolate;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      color: wheat;
+      cursor: pointer;
+    }
+
+    .card p {
+      margin-top: -15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="image-victor.jpg">
+    <div class="name">
+      <h1>Jaya Setiabudi 1</h1>
+      <p>verified</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="image-victor.jpg">
+    <div class="name">
+      <h1>Jaya Setiabudi 2</h1>
+      <p>verified</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="image-victor.jpg">
+    <div class="name">
+      <h1>Jaya Setiabudi 3</h1>
+      <p>verified</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="image-victor.jpg">
+    <div class="name">
+      <h1>Jaya Setiabudi 4</h1>
+      <p>verified</p>
+    </div>
+  </div>
+  <script src="traversal.js"></script>
+</body>
+
+</html>

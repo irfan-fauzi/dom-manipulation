@@ -54,8 +54,11 @@ function buatElemenNode(node, text) {
 
 //const buat = buatElemenNode("p", "waaau");
 
-replaceEL(sectionB, lisectionB, buatElemenNode("p", "waaau"))
-
+//replaceEL(sectionB, lisectionB, buatElemenNode("li", "waaau"))
+lisectionB.addEventListener('click', function (e) {
+  // addEl('li', 'saya gila', sectionB);
+  console.log(e)
+})
 
 
 
