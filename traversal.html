@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traversal</title>
   <style>
+    /* * {
+      margin: 0;
+      padding: 0;
+    } */
+
     img {
       border-radius: 50%;
       width: 40px;
@@ -30,19 +35,18 @@
       box-shadow: 12px 12px 38px 12px rgba(114, 114, 114, 0.42);
     }
 
-    .card::after {
-      position: absolute;
-      content: "x";
-      top: 0;
-      right: 10px;
-      /* padding: 2px 2px 2px 2px; */
-      background-color: chocolate;
+    .card span {
+      background-color: red;
+      padding: 2px 2px 2px 2px;
       border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      color: wheat;
+    }
+
+    .card span:hover {
+      background-color: orangered;
       cursor: pointer;
     }
+
+
 
     .card p {
       margin-top: -15px;
@@ -57,6 +61,7 @@
       <h1>Jaya Setiabudi 1</h1>
       <p>verified</p>
     </div>
+    <span class="close">x</span>
   </div>
   <div class="card">
     <img src="image-victor.jpg">
@@ -64,6 +69,7 @@
       <h1>Jaya Setiabudi 2</h1>
       <p>verified</p>
     </div>
+    <span class="close">x</span>
   </div>
   <div class="card">
     <img src="image-victor.jpg">
@@ -71,6 +77,7 @@
       <h1>Jaya Setiabudi 3</h1>
       <p>verified</p>
     </div>
+    <span class="close">x</span>
   </div>
   <div class="card">
     <img src="image-victor.jpg">
@@ -78,8 +85,9 @@
       <h1>Jaya Setiabudi 4</h1>
       <p>verified</p>
     </div>
+    <span class="close">x</span>
   </div>
-  <script src="traversal.js"></script>
+  <script src="trueway.js"></script>
 </body>
 
 </html>
